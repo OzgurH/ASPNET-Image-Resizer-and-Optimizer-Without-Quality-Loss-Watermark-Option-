@@ -17,5 +17,21 @@ VB.NET Example :
                         .ExecuteNonQuery()
                     End With 
             End Using
-        End Using
+End Using
+
+
+C# Example : 
+
+```csharp
+ using (var cn = new SqlConnection(ConnectionString))
+    {
+        using (var cmd = new SqlCommand("sp_sistem_KULLANICILAR", cn))
+        {
+            cmd.Connection.Open();
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@Resim", SqlDbType.Image);
+            cmd.Parameters("@Resim").Value = Interaction.IIf(FileUpload1.HasFile, Resim_Duzenle(FileUpload1.PostedFile.InputStream), Interaction.IIf(!FileUpload1.HasFile & Request.QueryString.Count == 0, File.ReadAllBytes(Server.MapPath("~/Tasarim/img/users/user-1.png")), DBNull.Value));
+            cmd.ExecuteNonQuery();
+        }
+    }
         
