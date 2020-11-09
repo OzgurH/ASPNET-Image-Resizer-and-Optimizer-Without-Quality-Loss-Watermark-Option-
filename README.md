@@ -1,1 +1,1 @@
-# ASPNET-Image-Resizer-and-Optimizer-Without-Quality-Loss-Watermark-Option-
+# ASPNET Image Resizer and Optimizer Without Quality Loss (Watermark Option)
