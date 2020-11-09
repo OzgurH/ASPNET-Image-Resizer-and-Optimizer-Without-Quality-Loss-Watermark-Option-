@@ -6,7 +6,7 @@ Save Resized / Watermarked image directly to SQL database :
 
 VB.NET Example : 
 
-<code>
+```csharp
    Using cn As New SqlConnection(ConnectionString)
             Using cmd As New SqlCommand("sp_sistem_KULLANICILAR", cn) 
                     With cmd
@@ -18,4 +18,4 @@ VB.NET Example :
                     End With 
             End Using
         End Using
-  </code>
+        
