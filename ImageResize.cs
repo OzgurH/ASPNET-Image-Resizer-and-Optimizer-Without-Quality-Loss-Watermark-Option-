@@ -38,7 +38,7 @@ internal static partial class Gorsel
     public static string param_MidPic_isPicHaveFixedHeigth = "1";
     public static string param_MidPic_isPicHaveFixedWidth = "1";
     public static string MidPic_Width = "50";
-    public static string MidPic_Heigth = "50";
+    public static string MidPic_Heigth = "50"; 
     public static string param_ThumbPic_ProcessMode = "1";
     public static string param_ThumbPic_Quality1 = "Format16bppRgb555";
     public static string param_ThumbPic_Quality2 = "Jpg";
